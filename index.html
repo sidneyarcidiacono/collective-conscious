@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Open Your Mind</title>
+    <link rel="stylesheet" href="./app.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div id="backdrop"></div>
+      <div class="modal" id="add-modal">
+        <div class="modal__content">
+          <label for="idea">Idea</label>
+          <input type="text" name="idea" id="idea" />
+          <label for="image-url">Image URL</label>
+          <input type="text" name="image-url" id="image-url" />
+          <label for="description">Describe Your Idea</label>
+          <input type="text" name="description" id=description />
+        </div>
+        <div class="modal__actions">
+          <button class="btn btn--success">Add</button>
+          <button class="btn btn--passive">Cancel</button>
+        </div>
+      </div>
+      <div class="modal" id="delete-modal">
+        <h2 class="modal__title">Are You Sure?</h2>
+        <p class="modal__content">
+          Are you sure you want to remove your Idea from collective consciousness? It isn't guaranteed to work.
+        </p>
+        <div class="modal__actions">
+          <button class="btn btn--passive">I'm Not Sure</button>
+          <button class="btn btn--danger">Remove Idea</button>
+        </div>
+      </div>
+
+      <header>
+        <h1>Collective Consciousness</h1>
+        <button>ADD IDEA</button>
+      </header>
+
+      <main>
+        <section id="entry-text" class="card">
+          <p>The Consciousness is Void - Please Share Your Thoughts</p>
+        </section>
+        <ul id="idea-list"></ul>
+      </main>
+    </body>
+  </html>
